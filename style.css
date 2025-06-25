@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(tic.jpg);
+    background-size: cover;
+}
+
+.game {
+    text-align: center;
+    background: linear-gradient(to right, black,gray);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 50px;
+    font-family:"Times New Roman", Times, serif ;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
+    background-clip: text;
+}
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.cell {
+    background: #ececec;
+    border-radius: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.cell:hover {
+    background: #ddd;
+}
+
+.status {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reset-button {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:30px;
+    transition: transform 0.2s ease-in-out;
+    
+}
+.reset-button:hover {
+    background: transparent;
+    transform: scale(1.2) ; 
+}
+
+  
